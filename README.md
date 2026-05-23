@@ -16,6 +16,14 @@ Here is how you can showcase the application. Save your captured screenshots in 
 ![Specs AI Conversational Workspace](./screenshots/specs_ai_dashboard.png)
 *Modern, clean conversational dashboard equipped with adaptive light/dark theme switching, quick actions, and smart context chips.*
 
+### 🔍 Global Spotlight Search Console
+![Specs Global Spotlight Search](./screenshots/spotlight_search.png)
+*Keyboard-activated global search overlay featuring category pill filtering, auto-focus input, and a custom transparent scrollbar.*
+
+### 🎮 Drag-and-Swipe Application Gallery
+![Specs Slideable Application Gallery](./screenshots/application_gallery.png)
+*Dynamic paginated plugin launcher supporting mouse dragging, touchscreen swiping, and two-finger trackpad horizontal slides with elastic rubberband physics.*
+
 ---
 
 ## ✨ Features
@@ -25,6 +33,25 @@ Here is how you can showcase the application. Save your captured screenshots in 
 - **💎 Frosted Liquid-Glass UI**: A modern design system relying on frosted transclucent glass layers (`backdrop-filter: blur`), thin custom scrollbars, and high-contrast typography.
 - **🎨 Reactive Theme Switching**: Adaptive dark and light modes, including dynamic logomark state updates (`specs-fill.svg` / `specs-white.svg`) reactive to user preference.
 - **⚙️ Desktop Environment**: Sleek top menu bar, interactive profile drawer, customizable full-width layout toggle, and interactive dock apps.
+
+---
+
+## 🌟 Key Components
+
+### 🔍 macOS-Style Spotlight Search
+Specs OS includes a lightning-fast, keyboard-first Spotlight Search overlay modeled after modern desktop OS experiences:
+- **Instant Activation**: Press `/` from anywhere on the desktop to immediately call up the search console. Press `Escape` to dismiss it.
+- **Auto-Focus Input**: Instant input focus upon toggle for keyboard-ready searching.
+- **Dynamic Capsule Filters**: Filter results on-the-fly using sleek glass pill tabs: `All`, `Applications`, `Actions`, `Contacts`, and `Help`.
+- **Fuzzy Real-Time Search**: Queries titles and descriptions dynamically to yield matching results instantly.
+- **Mac-Style Smooth Scroll**: A custom, transparent thin scrollbar that conforms to our premium translucent theme without breaking container alignments.
+
+### 🎮 Drag-to-Slide Application Gallery
+The desktop home screen features an interactive 2-row paginated grid displaying **12 pre-configured industry plugins** (Figma, Framer, Webflow, Notion, Slack, Vercel, Linear, Cursor, Canva, ChatGPT, Midjourney, and GitHub):
+- **1-to-1 Interactive Dragging**: Click and drag horizontally with your mouse or swipe with your finger on touchscreens; the launcher cards track your movements in real-time.
+- **Elastic Rubberband Physics**: Dragging past bounds (page 1 left or page 2 right) applies a physical `0.3` resistance coefficient, creating a smooth bouncy boundary feel.
+- **Trackpad Horizontal Gestures**: Supports modern **two-finger swipes on laptop trackpads**! Uses non-passive listeners to bypass default browser page history swiping, delivering a fluid native feel.
+- **Smart Snap Cooldown**: Uses a `600ms` momentum lock to prevent rapid page-skipping, ensuring snaps land precisely on the next page.
 
 ---
 
