@@ -1,0 +1,155 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
+
+:root {
+  /* Color Palette - Black */
+  --black-900: #000000;
+  --black-800: #111111;
+  --black-700: #282828;
+  --black-600: #383838;
+  --black-500: #4b4b4b;
+  --black-400: #9d9fa1;
+  --black-300: #bdbdbd;
+  --black-200: #dddddd;
+  --black-100: #f2f2f2;
+  --black-50: #f9f9f9;
+  --white: #ffffff;
+
+  /* Color Palette - Blue */
+  --blue-900: #042f66;
+  --blue-800: #06408a;
+  --blue-700: #0851ae;
+  --blue-600: #0b62d2;
+  --blue-500: #1075f0;
+  --blue-400: #4292f3;
+  --blue-300: #74aff6;
+  --blue-200: #a6ccf9;
+  --blue-100: #d8e8fc;
+  --blue-50: #f0f6fe;
+
+  /* Semantic Colors */
+  --bg-primary: var(--black-50);
+  --bg-secondary: var(--white);
+  --text-primary: var(--black-900);
+  --text-secondary: var(--black-500);
+  --text-tertiary: var(--black-400);
+  
+  --border-color: var(--black-100);
+  --accent-color: var(--blue-500);
+  --accent-hover: var(--blue-600);
+  
+  /* Additional UI Colors */
+  --sidebar-bg: var(--white);
+  --sidebar-border: var(--black-100);
+  --sidebar-hover: var(--black-50);
+  --card-bg: var(--white);
+  --input-bg: var(--black-50);
+  --input-border: var(--black-100);
+
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --bg-primary: #121212; /* Slightly softer than pure black */
+  --bg-secondary: var(--black-900);
+  --text-primary: var(--white);
+  --text-secondary: var(--black-300);
+  --text-tertiary: var(--black-400);
+  
+  --border-color: var(--black-800);
+  
+  --sidebar-bg: var(--black-900);
+  --sidebar-border: var(--black-800);
+  --sidebar-hover: var(--black-800);
+  --card-bg: var(--black-900);
+  --input-bg: var(--black-800);
+  --input-border: var(--black-700);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--border-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary); 
+}
