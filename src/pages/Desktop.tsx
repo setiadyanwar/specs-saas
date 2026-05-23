@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { 
-  Compass, LayoutGrid, Briefcase, ChevronLeft, ChevronRight, 
-  Sparkles, Code, Globe, Terminal, Database, MessageSquare, 
-  Cloud, ListTodo, Bot, Palette, Image as ImageIcon,
+  LayoutGrid, Briefcase, ChevronLeft, ChevronRight, MessageSquare, 
   Search, User, Calendar, FileText
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';

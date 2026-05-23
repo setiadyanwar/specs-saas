@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import { 
-  Plus, Compass, Settings, User, Box, 
-  ChevronLeft, LayoutGrid, Zap, 
-  Code, Image as ImageIcon, Briefcase, Command, ArrowRight, PanelLeft,
+  Plus, Settings, User, Box, 
+  LayoutGrid, Zap, 
+  Code, Image as ImageIcon, PanelLeft,
   Sun, Moon
 } from 'lucide-react';
 import { PromptInput } from '../components/PromptInput';
